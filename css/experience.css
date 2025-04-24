@@ -1,0 +1,27 @@
+/* Seção de Experiência Profissional */
+.experience-item {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.experience-item::before {
+  content: '○';
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+}
+
+.company {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.position {
+  font-weight: 500;
+}
+
+.experience-date {
+  color: #666;
+  font-size: 0.9rem;
+}

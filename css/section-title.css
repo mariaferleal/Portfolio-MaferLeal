@@ -1,0 +1,36 @@
+/* Estilo para os títulos das seções no estilo da imagem de referência */
+.section-title {
+  position: relative;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.section-title .highlight {
+  background-color: #ffeb3b; /* Amarelo */
+  padding: 5px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Fita adesiva no canto superior direito */
+.section-title .highlight::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 30px;
+  height: 20px;
+  background-color: #d1d1d1; /* Cinza para a fita adesiva */
+  transform: rotate(15deg);
+  z-index: -1;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Remover a animação anterior */
+.section-title .highlight::after {
+  display: none;
+}

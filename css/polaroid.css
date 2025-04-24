@@ -1,0 +1,34 @@
+/* Estilo para a foto do perfil com moldura de polaroid */
+.profile-photo {
+  flex: 1;
+  max-width: 220px;
+  position: relative;
+  background-color: white;
+  padding: 10px 10px 35px 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: rotate(0deg);
+}
+
+.profile-photo img {
+  width: 100%;
+  display: block;
+  border: 1px solid #ddd;
+}
+
+/* Adiciona a aparência de polaroid com a parte inferior maior */
+.profile-photo::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 2px;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+}

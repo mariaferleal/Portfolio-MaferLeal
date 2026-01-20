@@ -366,7 +366,7 @@ button, input, select, textarea {
 
 .project-box {
   width: 200px;
-  height: 200px;
+  height: 170px;
   perspective: 1000px;
 }
 
@@ -390,6 +390,7 @@ button, input, select, textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 15px;
   height: 100%;
 }
 
@@ -400,6 +401,22 @@ button, input, select, textarea {
 }
 
 .project-placeholder p {
+  color: #888;
+  font-weight: bold;
+}
+
+.project-placeholder .img_project_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.project-placeholder .img_project_1 p {
+  position: static;
+  margin-top: 8px;
   color: #888;
   font-weight: bold;
 }

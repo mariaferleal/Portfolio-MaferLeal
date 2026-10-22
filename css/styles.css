@@ -504,8 +504,76 @@ a {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.case-card:nth-child(2) {
+.case-card:nth-child(even) {
   transform: rotate(0.8deg);
+}
+
+/* Cartão em destaque ocupa a linha toda */
+.case-card-featured {
+  grid-column: 1 / -1;
+  transform: rotate(-0.4deg);
+  padding: 34px 30px 28px;
+}
+
+.case-card-featured .case-title {
+  font-size: 2.4rem;
+}
+
+.case-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 40px;
+}
+
+.case-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.case-col + .case-col {
+  border-left: 2px dashed #cfc9a8;
+  padding-left: 40px;
+}
+
+.case-card-featured .chips {
+  margin-top: 6px;
+}
+
+.case-role {
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+/* Áreas de atuação e outras frentes */
+.area-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 34px;
+}
+
+.area-tags li {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.15rem;
+  font-weight: 700;
+  background: white;
+  border: 2px solid var(--secondary-color);
+  padding: 2px 16px;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.also {
+  margin-top: 40px;
+}
+
+.also .chips {
+  padding-top: 4px;
+}
+
+.also .chips li {
+  font-size: 1rem;
+  padding: 3px 14px;
 }
 
 /* Fita adesiva no topo do cartão */
@@ -971,6 +1039,17 @@ a {
 
   .facts {
     grid-template-columns: 1fr;
+  }
+
+  .case-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .case-col + .case-col {
+    border-left: none;
+    border-top: 2px dashed #cfc9a8;
+    padding-left: 0;
+    padding-top: 16px;
   }
 }
 

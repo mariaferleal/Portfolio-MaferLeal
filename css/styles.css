@@ -518,38 +518,6 @@ a {
   transform: rotate(0.8deg);
 }
 
-/* Cartão em destaque ocupa a linha toda */
-.case-card-featured {
-  grid-column: 1 / -1;
-  transform: rotate(-0.4deg);
-  padding: 34px 30px 28px;
-}
-
-.case-card-featured .case-title {
-  font-size: 2.4rem;
-}
-
-.case-cols {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 40px;
-}
-
-.case-col {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.case-col + .case-col {
-  border-left: 2px dashed #cfc9a8;
-  padding-left: 40px;
-}
-
-.case-card-featured .chips {
-  margin-top: 6px;
-}
-
 .case-role {
   font-size: 0.98rem;
   line-height: 1.5;
@@ -575,6 +543,10 @@ a {
 
 .also {
   margin-top: 40px;
+}
+
+.more-link {
+  margin-top: 18px;
 }
 
 .also .chips {
@@ -706,29 +678,6 @@ a {
   font-size: 0.85rem;
   transform: rotate(-3deg);
   letter-spacing: 0.05em;
-}
-
-.case-card-empty {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: #f9f9f9;
-  border: 2px dashed #aaa;
-  box-shadow: none;
-}
-
-.case-card-empty::before {
-  display: none;
-}
-
-.case-card-empty > i {
-  font-size: 2rem;
-  color: #aaa;
-}
-
-.case-card-empty .case-link {
-  align-self: center;
-  margin-top: 6px;
 }
 
 /* ---------- Linha do tempo (experiência e formação) ---------- */
@@ -1050,16 +999,6 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .case-cols {
-    grid-template-columns: 1fr;
-  }
-
-  .case-col + .case-col {
-    border-left: none;
-    border-top: 2px dashed #cfc9a8;
-    padding-left: 0;
-    padding-top: 16px;
-  }
 }
 
 @media (max-width: 600px) {

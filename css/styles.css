@@ -680,6 +680,79 @@ a {
   letter-spacing: 0.05em;
 }
 
+/* ---------- Processo de design ---------- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  counter-reset: step;
+}
+
+.step {
+  position: relative;
+  background: white;
+  border: 2px solid var(--secondary-color);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 22px 20px 18px 66px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.step-num {
+  position: absolute;
+  left: 16px;
+  top: 18px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.step h3 {
+  font-size: 1.35rem;
+  margin-bottom: 4px;
+}
+
+.step p {
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+/* ---------- Design e Engenharia de Software ---------- */
+.bridge-intro {
+  max-width: 70ch;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.bridge .case-card {
+  background: #f4faff;
+  border-color: #b9d4ea;
+}
+
+.bridge .case-card::before {
+  background: rgba(144, 202, 249, 0.6);
+}
+
+.bridge .case-tag {
+  background: #90caf9;
+}
+
+.case-title.sm {
+  font-size: 1.55rem;
+}
+
 /* ---------- Linha do tempo (experiência e formação) ---------- */
 .timeline {
   position: relative;

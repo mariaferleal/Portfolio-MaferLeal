@@ -49,6 +49,12 @@ h4 {
   line-height: 1.2;
 }
 
+/* Mesmas fontes do site original, parágrafos em Indie Flower */
+p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.1rem;
+}
+
 ul,
 ol {
   list-style: none;
@@ -302,8 +308,12 @@ a {
 .about-text {
   margin-top: 16px;
   position: relative;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   max-width: 60ch;
+}
+
+.about-text p {
+  font-size: 1.25rem;
 }
 
 .about-text::before {
@@ -761,9 +771,8 @@ a {
 }
 
 .company {
-  font-family: 'Shadows Into Light', cursive;
   font-weight: 700;
-  font-size: 1.45rem;
+  font-size: 1.2rem;
 }
 
 .roles {

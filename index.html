@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maria Fernanda Leal Pinheiro - UX/UI Designer</title>
+    <meta
+      name="description"
+      content="Portfólio de Maria Fernanda Leal Pinheiro, UX/UI Designer e Designer de Produto. Experiências digitais claras, funcionais e centradas nas pessoas."
+    />
+    <meta property="og:title" content="Maria Fernanda Leal Pinheiro - UX/UI Designer" />
+    <meta
+      property="og:description"
+      content="Experiências digitais claras, funcionais e centradas nas pessoas."
+    />
+    <meta property="og:type" content="website" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,101 +28,286 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/animations.css" />
-    <link rel="stylesheet" href="css/section-title.css" />
-    <link rel="stylesheet" href="css/polaroid.css" />
-    <link rel="stylesheet" href="css/experience.css" />
   </head>
   <body>
+    <a class="skip-link" href="#projetos">Pular para os projetos</a>
+
     <div class="container">
+      <!-- Menu fixo no topo -->
+      <nav class="topbar" aria-label="Navegação principal">
+        <a href="#inicio" class="topbar-brand">Mafe Leal</a>
+        <ul class="topbar-links">
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
       <div class="grid-paper">
-        <!-- Título principal no topo -->
-        <div class="main-title">
-          <h1 class="portfolio-title">Portfólio</h1>
-        </div>
+        <div class="paper-clip" aria-hidden="true"></div>
 
-        <!-- Elementos decorativos -->
-        <div class="paper-clip"></div>
-
-        <!-- Cabeçalho com informações pessoais e Sobre Mim lado a lado -->
-        <header class="header">
+        <!-- Apresentação -->
+        <header class="hero" id="inicio">
           <div class="profile-photo pop-in">
-            <img src="images/profile.jpg" alt="Maria Fernanda Leal Pinheiro" />
+            <img
+              src="images/profile.jpg"
+              alt="Foto de Maria Fernanda Leal Pinheiro"
+            />
           </div>
 
-          <div class="profile-info slide-in-right">
-            <h1 class="name">Maria Fernanda Leal Pinheiro</h1>
+          <div class="hero-text slide-in-right">
+            <p class="eyebrow">Oi, eu sou a Maria Fernanda</p>
+            <h1 class="hero-title">
+              Experiências digitais
+              <span class="marker">claras e centradas nas pessoas</span>
+            </h1>
             <p class="title">UX/UI Designer | Designer de Produto</p>
 
-            <!-- Sobre Mim integrado ao cabeçalho -->
             <div class="about-text">
               <p>
-                Sou designer com foco em criar experiências digitais claras,
-                funcionais e centradas nas pessoas. Atuo em UX/UI desde a
-                compreensão do problema até a construção de interfaces
-                acessíveis e alinhadas aos objetivos do produto. 
-                Curso Engenharia de Software, o que me permite unir pensamento de
-                design e visão técnica para desenvolver soluções viáveis e
+                Atuo em UX/UI desde a compreensão do problema até a construção
+                de interfaces acessíveis e alinhadas aos objetivos do produto.
+                Curso Engenharia de Software, o que me permite unir pensamento
+                de design e visão técnica para desenvolver soluções viáveis e
                 escaláveis.
               </p>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#projetos" class="btn btn-primary">
+                Ver projetos <i class="fas fa-arrow-down" aria-hidden="true"></i>
+              </a>
+              <a href="#contato" class="btn btn-secondary">Falar comigo</a>
             </div>
           </div>
         </header>
 
-        <!-- Seção de Projetos -->
-        <section class="section">
+        <!-- Destaques rápidos -->
+        <ul class="facts" aria-label="Destaques">
+          <li class="sticky-note green">
+            <strong>Desde 2023</strong>
+            <span>trabalhando com UI e UX</span>
+          </li>
+          <li class="sticky-note orange">
+            <strong>Do estágio ao time</strong>
+            <span>cresci de estagiária a designer júnior na mesma empresa</span>
+          </li>
+          <li class="sticky-note blue">
+            <strong>Visão técnica</strong>
+            <span>design com apoio da Engenharia de Software</span>
+          </li>
+        </ul>
+
+        <!-- Projetos -->
+        <section class="section" id="projetos">
           <h2 class="section-title">
             <span class="highlight">Projetos</span>
           </h2>
 
-          <div class="projects-container">
-            <div class="project-box">
-              <div class="project-inner">
-                <div class="project-placeholder">
-                  <a
-                    href="https://www.figma.com/design/VjedWVbPC6RTenngf2oPAJ/Job-Hunter?node-id=201-17&t=JBZhq6k6SzUtnWm0-1"
-                    class="img_project_1"
-                    ><img src="images/icons/Thumb.png" alt="" />
-                    <p>Projeto 1</p></a
-                  >
-                </div>
-              </div>
-            </div>
+          <p class="nda-note">
+            <i class="fas fa-lock" aria-hidden="true"></i>
+            <span>
+              Boa parte do meu trabalho é protegida por contrato. Por isso, aqui
+              você encontra o meu papel e o raciocínio em cada projeto, sem telas
+              ou dados confidenciais. Se quiser conversar sobre algum deles, é só
+              me chamar.
+            </span>
+          </p>
 
-            <div class="project-box">
-              <div class="project-inner">
-                <div class="project-placeholder">
-                  <i class="fas fa-plus"></i>
-                  <p>Projeto 2</p>
-                </div>
-              </div>
-            </div>
+          <div class="cases">
+            <!-- Case 1 -->
+            <article class="case-card">
+              <span class="case-tag">UX/UI</span>
+              <h3 class="case-title">Job Hunter</h3>
+              <p class="case-summary">
+                Projeto de UX/UI publicado no Figma, com as telas e a estrutura
+                do produto abertas para consulta.
+              </p>
+              <!-- Para completar: adicione aqui o seu papel e o resultado do Job Hunter, em uma ou duas frases -->
+              <a
+                class="case-link"
+                href="https://www.figma.com/design/VjedWVbPC6RTenngf2oPAJ/Job-Hunter?node-id=201-17&t=JBZhq6k6SzUtnWm0-1"
+                target="_blank"
+                rel="noopener"
+              >
+                Ver no Figma <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+            </article>
 
-            <div class="project-box">
-              <div class="project-inner">
-                <div class="project-placeholder">
-                  <i class="fas fa-plus"></i>
-                  <p>Projeto 3</p>
-                </div>
-              </div>
-            </div>
+            <!-- Case 2 -->
+            <article class="case-card">
+              <span class="case-tag">Produto &middot; UX</span>
+              <h3 class="case-title">Hubble</h3>
+              <p class="case-subtitle">Plataforma de recrutamento</p>
+              <p class="case-summary">
+                Atuei de forma intensa no produto. A plataforma conta com um
+                agente de IA que prevê o tempo de contratação.
+              </p>
+              <p class="case-label">O que eu fiz</p>
+              <ul class="case-list">
+                <li>Contribuí com as definições de produto e com o UX</li>
+                <li>Resolvi problemas de hierarquia visual nos cards</li>
+                <li>
+                  Criei prompts de IA, integrados ao Figma, para documentar os
+                  componentes do design system
+                </li>
+                <li>
+                  Automatizei com scripts a contagem de telas dos arquivos do
+                  projeto
+                </li>
+              </ul>
+              <ul class="chips" aria-label="Ferramentas">
+                <li>Figma</li>
+                <li>FigJam</li>
+                <li>Design system</li>
+                <li>IA</li>
+              </ul>
+              <!-- Se o Hubble estiver sob contrato, adicione: <span class="stamp">Protegido por contrato</span> -->
+            </article>
 
-            <div class="project-box">
-              <div class="project-inner">
-                <div class="project-placeholder">
-                  <i class="fas fa-plus"></i>
-                  <p>Projeto 4</p>
-                </div>
-              </div>
-            </div>
+            <!-- Espaço para os próximos cases -->
+            <article class="case-card case-card-empty">
+              <i class="fas fa-plus" aria-hidden="true"></i>
+              <h3 class="case-title">Mais cases a caminho</h3>
+              <p class="case-summary">
+                Enquanto isso, você pode ver outros trabalhos no Behance.
+              </p>
+              <a
+                class="case-link"
+                href="https://behance.net/mariaferleal"
+                target="_blank"
+                rel="noopener"
+              >
+                Abrir Behance <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+            </article>
           </div>
         </section>
 
-        <!-- Seção de Contato (movida para abaixo dos projetos) -->
-        <section class="section contact-section">
+        <!-- Experiência -->
+        <section class="section" id="experiencia">
+          <h2 class="section-title">
+            <span class="highlight">Experiência Profissional</span>
+          </h2>
+
+          <ol class="timeline">
+            <li class="timeline-item">
+              <div class="company">DigitalSys Tecnologia</div>
+              <ul class="roles">
+                <li>
+                  <span class="position">UI &amp; UX Designer Júnior</span>
+                  <span class="experience-date">Abril de 2025 até hoje</span>
+                </li>
+                <li>
+                  <span class="position">UI &amp; UX Designer Estágio</span>
+                  <span class="experience-date">Maio de 2024 a abril de 2025</span>
+                </li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <div class="company">Unect Jr.</div>
+              <ul class="roles">
+                <li>
+                  <span class="position">UI Designer</span>
+                  <span class="experience-date">Janeiro de 2023 a setembro de 2024</span>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="section" id="habilidades">
+          <h2 class="section-title">
+            <span class="highlight">Habilidades</span>
+          </h2>
+
+          <h3 class="subheading">Ferramentas</h3>
+          <ul class="software-skills">
+            <li class="skill-item">
+              <div class="skill-icon" style="background-color: #00c8ff">
+                <img src="images/icons/figma.svg" alt="" />
+              </div>
+              <p class="skill-name">Figma</p>
+            </li>
+            <li class="skill-item">
+              <div class="skill-icon" style="background-color: #f37021">
+                <img src="images/icons/illustrator.svg" alt="" />
+              </div>
+              <p class="skill-name">Illustrator</p>
+            </li>
+            <li class="skill-item">
+              <div class="skill-icon" style="background-color: #2e9fdb">
+                <img src="images/icons/photoshop.svg" alt="" />
+              </div>
+              <p class="skill-name">Photoshop</p>
+            </li>
+            <li class="skill-item">
+              <div class="skill-icon" style="background-color: #ff61f6">
+                <img src="images/icons/adobexd.svg" alt="" />
+              </div>
+              <p class="skill-name">Adobe XD</p>
+            </li>
+            <li class="skill-item">
+              <div class="skill-icon" style="background-color: #f7b500">
+                <img src="images/icons/sketch.svg" alt="" />
+              </div>
+              <p class="skill-name">Sketch</p>
+            </li>
+          </ul>
+
+          <h3 class="subheading">Competências</h3>
+          <ul class="expertise-area">
+            <li class="sticky-note green">Pesquisa de mercado</li>
+            <li class="sticky-note blue">Capacidade de organização</li>
+            <li class="sticky-note orange">Gestão de produtos</li>
+            <li class="sticky-note pink">Liderança</li>
+            <li class="sticky-note purple">Trabalho em equipe</li>
+            <li class="sticky-note cyan">Comunicação</li>
+          </ul>
+        </section>
+
+        <!-- Formação -->
+        <section class="section" id="formacao">
+          <h2 class="section-title">
+            <span class="highlight">Formação</span>
+          </h2>
+
+          <ol class="timeline">
+            <li class="timeline-item">
+              <div class="company">Universidade Tecnológica Federal do Paraná</div>
+              <ul class="roles">
+                <li>
+                  <span class="position">Bacharelado em Engenharia de Software</span>
+                  <span class="experience-date">Junho de 2024 até hoje</span>
+                </li>
+              </ul>
+            </li>
+            <li class="timeline-item">
+              <div class="company">ETEC de Itararé</div>
+              <ul class="roles">
+                <li>
+                  <span class="position">
+                    Ensino Médio integrado ao ensino técnico de administração
+                  </span>
+                  <span class="experience-date">Fevereiro de 2018 a dezembro de 2020</span>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Contato -->
+        <section class="section contact-section" id="contato">
           <h2 class="section-title">
             <span class="highlight">Contato</span>
           </h2>
+
+          <p class="contact-lead">
+            Vamos conversar sobre o seu produto ou sobre uma oportunidade?
+          </p>
 
           <div class="contact-container">
             <a
@@ -117,195 +315,50 @@
               class="contact-card email-card"
             >
               <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
               </div>
               <div class="contact-info">
                 <h3>Email</h3>
                 <p>mafelealpinheiro@gmail.com</p>
               </div>
-              <div class="contact-hover">
-                <span>Enviar email</span>
-              </div>
+              <div class="contact-hover"><span>Enviar email</span></div>
             </a>
 
             <a
               href="https://linkedin.com/in/mariaferleal"
               target="_blank"
+              rel="noopener"
               class="contact-card linkedin-card"
             >
               <div class="contact-icon">
-                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
               </div>
               <div class="contact-info">
                 <h3>LinkedIn</h3>
                 <p>linkedin.com/in/mariaferleal</p>
               </div>
-              <div class="contact-hover">
-                <span>Ver perfil</span>
-              </div>
+              <div class="contact-hover"><span>Ver perfil</span></div>
             </a>
 
             <a
               href="https://behance.net/mariaferleal"
               target="_blank"
+              rel="noopener"
               class="contact-card behance-card"
             >
               <div class="contact-icon">
-                <i class="fab fa-behance"></i>
+                <i class="fab fa-behance" aria-hidden="true"></i>
               </div>
               <div class="contact-info">
                 <h3>Behance</h3>
                 <p>behance.net/mariaferleal</p>
               </div>
-              <div class="contact-hover">
-                <span>Ver portfólio</span>
-              </div>
+              <div class="contact-hover"><span>Ver portfólio</span></div>
             </a>
           </div>
         </section>
 
-        <!-- Seção de Habilidades de Software -->
-        <section class="section">
-          <h2 class="section-title">
-            <span class="highlight">Habilidades de Software</span>
-          </h2>
-
-          <div class="software-skills">
-            <div class="skill-item">
-              <div class="skill-icon" style="background-color: #00c8ff">
-                <img src="images/icons/figma.svg" alt="Figma" />
-              </div>
-              <p class="skill-name">Figma</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" style="width: 95%"></div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-icon" style="background-color: #f37021">
-                <img src="images/icons/illustrator.svg" alt="Illustrator" />
-              </div>
-              <p class="skill-name">Illustrator</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" style="width: 90%"></div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-icon" style="background-color: #2e9fdb">
-                <img src="images/icons/photoshop.svg" alt="Photoshop" />
-              </div>
-              <p class="skill-name">Photoshop</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" style="width: 75%"></div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-icon" style="background-color: #ff61f6">
-                <img src="images/icons/adobexd.svg" alt="Adobe XD" />
-              </div>
-              <p class="skill-name">Adobe XD</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" style="width: 70%"></div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-icon" style="background-color: #f7b500">
-                <img src="images/icons/sketch.svg" alt="Sketch" />
-              </div>
-              <p class="skill-name">Sketch</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" style="width: 65%"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Seção de Experiência Profissional -->
-        <section class="section">
-          <h2 class="section-title">
-            <span class="highlight">Experiência Profissional</span>
-          </h2>
-
-          <div class="experience-item">
-            <div class="company">DigitalSys Tecnologia</div>
-            <div class="position">UI & UX Designer Júnior</div>
-            <div class="experience-date">ABRIL DE 2025 - PRESENTE (1 MÊS)</div>
-          </div>
-
-          <div class="experience-item">
-            <div class="company">DigitalSys Tecnologia</div>
-            <div class="position">UI & UX Designer Estágio</div>
-            <div class="experience-date">
-              MAIO DE 2024 - ABRIL DE 2025 (1 ANO)
-            </div>
-          </div>
-
-          <div class="experience-item">
-            <div class="company">Unect Jr.</div>
-            <div class="position">UI Designer</div>
-            <div class="experience-date">
-              JANEIRO DE 2023 - SETEMBRO DE 2024 (1 ANO 9 MESES)
-            </div>
-          </div>
-        </section>
-
-        <!-- Seção de Educação -->
-        <section class="section">
-          <h2 class="section-title">
-            <span class="highlight">Formação</span>
-          </h2>
-
-          <div class="education-item">
-            <div class="school">Universidade Tecnológica Federal do Paraná</div>
-            <div class="degree">Bacharelado em Engenharia de Software</div>
-            <div class="education-date">JUN 2024 - ATUAL</div>
-          </div>
-
-          <div class="education-item">
-            <div class="school">ETEC de Itararé</div>
-            <div class="degree">
-              Ensino Médio integrado ao ensino técnico de administração
-            </div>
-            <div class="education-date">FEV 2018 - DEZ 2020</div>
-          </div>
-        </section>
-        <!-- Seção de Competências (adicionada novamente) -->
-        <section class="section">
-          <h2 class="section-title">
-            <span class="highlight">Competências</span>
-          </h2>
-
-          <div class="expertise-area">
-            <div class="sticky-note green">
-              <h3>Pesquisa de mercado</h3>
-            </div>
-            <div class="sticky-note blue">
-              <h3>Capacidade de organização</h3>
-            </div>
-            <div class="sticky-note orange">
-              <h3>Gestão de produtos</h3>
-            </div>
-            <div class="sticky-note pink">
-              <h3>Liderança</h3>
-            </div>
-            <div class="sticky-note" style="background-color: #ce93d8">
-              <h3>Trabalho em equipe</h3>
-            </div>
-            <div class="sticky-note" style="background-color: #80deea">
-              <h3>Comunicação</h3>
-            </div>
-          </div>
-        </section>
-
-        <!-- Nota manuscrita -->
-        <div
-          class="handwritten"
-          style="bottom: 20px; right: 40px; font-size: 1.2rem"
-        >
-          Obrigada por visitar meu portfólio!
-        </div>
+        <p class="handwritten">Obrigada por visitar meu portfólio!</p>
       </div>
     </div>
 

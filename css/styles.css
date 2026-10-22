@@ -747,6 +747,10 @@ a {
   margin-bottom: 30px;
 }
 
+.steps {
+  margin-bottom: 8px;
+}
+
 .bridge .case-card {
   background: #f4faff;
   border-color: #b9d4ea;
@@ -758,6 +762,10 @@ a {
 
 .bridge .case-tag {
   background: #90caf9;
+}
+
+.ia-heading {
+  margin-top: 40px;
 }
 
 .case-title.sm {

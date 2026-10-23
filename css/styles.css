@@ -14,9 +14,9 @@
   --grid-color: rgba(98, 126, 150, 0.14);
 
   /* Papel, mesa e sombras quentes */
-  --paper: #fdf9ee;
-  --paper-dark: #f1e8d4;
-  --desk: #d3c7b0;
+  --paper: #fffdf7;
+  --paper-dark: #f6efde;
+  --desk: #e0d6c2;
   --shadow-soft: 0 1px 1px rgba(70, 50, 25, 0.28), 0 5px 10px rgba(70, 50, 25, 0.14);
   --shadow-lift: 0 1px 2px rgba(70, 50, 25, 0.32), 0 14px 24px rgba(70, 50, 25, 0.22);
   --paper-fx: var(--tex-fibers), var(--tex-grain);
@@ -148,7 +148,7 @@ a {
 
 .container::after {
   transform: rotate(0.25deg);
-  background-color: #e9dfc8;
+  background-color: #f0e8d4;
 }
 
 /* ---------- Menu em abas de papel ---------- */
@@ -227,12 +227,13 @@ a {
 .grid-paper {
   background-color: var(--paper);
   background-image:
+    linear-gradient(rgba(255, 253, 247, 0.6), rgba(255, 253, 247, 0.6)),
     var(--tex-fibers),
     var(--tex-grain),
     var(--tex-blotch),
     linear-gradient(var(--grid-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-  background-size: 520px 520px, 300px 300px, 900px 900px, 20px 20px, 20px 20px;
+  background-size: auto, 520px 520px, 300px 300px, 900px 900px, 20px 20px, 20px 20px;
   border: 1px solid rgba(70, 50, 25, 0.25);
   border-top-color: rgba(70, 50, 25, 0.4);
   box-shadow: var(--shadow-lift);
@@ -1014,7 +1015,7 @@ a {
 
 /* ---------- IA no processo de design ---------- */
 .bridge-intro {
-  max-width: 68ch;
+  max-width: none;
   font-size: 1.3rem;
   margin-bottom: 48px;
 }

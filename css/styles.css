@@ -227,7 +227,7 @@ a {
 /* ---------- Apresentação ---------- */
 .hero {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 64px;
   margin-bottom: 64px;
   position: relative;
@@ -279,6 +279,50 @@ a {
   margin-bottom: 4px;
 }
 
+.main-title {
+  text-align: center;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.portfolio-title {
+  font-size: 4rem;
+  color: var(--accent-color);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.portfolio-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: underlineAnimation 1s ease-out forwards 0.5s;
+}
+
+@keyframes underlineAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.name {
+  font-size: clamp(2.2rem, 4.5vw, 2.8rem);
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
 .hero-title {
   font-size: clamp(2.8rem, 6.2vw, 4.8rem);
   font-weight: 700;
@@ -304,7 +348,7 @@ a {
 .title {
   font-family: 'Indie Flower', cursive;
   font-size: 1.35rem;
-  color: var(--muted-color);
+  color: var(--text-color);
   margin-bottom: 6px;
 }
 
@@ -324,8 +368,8 @@ a {
   position: absolute;
   top: -10px;
   left: 0;
-  width: 220px;
-  height: 3px;
+  width: 300px;
+  height: 2px;
   background-color: var(--accent-color);
 }
 

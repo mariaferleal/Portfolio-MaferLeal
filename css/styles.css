@@ -519,6 +519,36 @@ a {
   transform: rotate(0.8deg);
 }
 
+.case-card-empty {
+  grid-column: span 2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f9f9f9;
+  border: 2px dashed #aaa;
+  box-shadow: none;
+  transform: none !important;
+}
+
+.case-card-empty::before {
+  display: none;
+}
+
+.case-card-empty > i {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+.case-card-empty .case-link {
+  align-self: center;
+}
+
+@media (max-width: 700px) {
+  .case-card-empty {
+    grid-column: auto;
+  }
+}
+
 .case-role {
   font-size: 0.98rem;
   line-height: 1.5;

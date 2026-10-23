@@ -794,8 +794,33 @@ a {
   background: #90caf9;
 }
 
-.ia-heading {
-  margin-top: 40px;
+.ia-extras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-top: 34px;
+}
+
+.ia-extras .sticky-note {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 18px 18px;
+}
+
+.ia-extras strong {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.ia-extras span {
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.ia-extras .sticky-note:nth-child(2) {
+  transform: rotate(1.5deg);
 }
 
 .case-title.sm {

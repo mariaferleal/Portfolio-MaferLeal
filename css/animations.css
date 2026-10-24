@@ -1,0 +1,287 @@
+/* Animações adicionais para elementos interativos */
+.skill-icon {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-30deg);
+  transition: 0.5s;
+}
+
+.skill-icon:hover::before {
+  animation: shine 0.7s;
+}
+
+@keyframes shine {
+  100% {
+    left: 100%;
+  }
+}
+
+/* Efeito de destaque para os itens de experiência */
+.experience-item:hover {
+  transform: translateX(10px);
+  transition: transform 0.3s ease;
+}
+
+/* Efeito de rotação para as notas adesivas */
+.sticky-note {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sticky-note:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
+  z-index: 10;
+}
+
+/* Efeito de pulsação para o QR code */
+.qr-code {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Efeito de escrita para texto manuscrito */
+.typing-effect {
+  overflow: hidden;
+  border-right: 2px solid var(--accent-color);
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--accent-color) }
+}
+
+/* Efeito de dobra de papel para os cantos */
+.grid-paper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 50px 0;
+  border-color: transparent #ddd transparent transparent;
+}
+
+/* Efeito de sombra dinâmica */
+.grid-paper {
+  transition: box-shadow 0.3s ease;
+}
+
+.grid-paper:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Efeito de marca d'água */
+.watermark {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  font-size: 8rem;
+  color: rgba(0,0,0,0.03);
+  transform: rotate(-30deg);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Efeito de destaque para links */
+.contact-item a {
+  position: relative;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.contact-item a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.contact-item a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Efeito de fita adesiva */
+.tape {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transform: rotate(-45deg);
+  z-index: 5;
+}
+
+.tape-top-right {
+  top: -10px;
+  right: 30px;
+}
+
+.tape-bottom-left {
+  bottom: -10px;
+  left: 30px;
+  transform: rotate(45deg);
+}
+
+/* Efeito de marca de caneta */
+.pen-mark {
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: var(--accent-color);
+  opacity: 0.7;
+  transform: rotate(random(-5deg, 5deg));
+}
+
+/* Efeito de clipe de papel animado */
+.paper-clip {
+  animation: wiggle 5s infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-10deg); }
+  50% { transform: rotate(-8deg); }
+}
+
+/* Efeito de hover para seções */
+.section {
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+/* Efeito de destaque para títulos de seção */
+.section-title .highlight {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title .highlight::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: var(--primary-color);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.section-title:hover .highlight::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Efeito de destaque para itens ao passar o mouse */
+.highlight-on-hover {
+  transition: all 0.3s ease;
+}
+
+.highlight-on-hover:hover {
+  color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+/* Efeito de carregamento progressivo */
+.progress-line {
+  width: 0;
+  height: 3px;
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  animation: progress 1.5s ease-out forwards;
+}
+
+@keyframes progress {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* Efeito de marca de dobra */
+.fold-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, transparent 50%, rgba(0,0,0,0.05) 50%);
+}
+
+.fold-mark-top-right {
+  top: 0;
+  right: 0;
+}
+
+.fold-mark-bottom-left {
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+/* Efeito de sombra para texto */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Efeito de destaque para botões */
+.button-highlight {
+  position: relative;
+  overflow: hidden;
+}
+
+.button-highlight::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: 0.5s;
+}
+
+.button-highlight:hover::after {
+  left: 100%;
+}

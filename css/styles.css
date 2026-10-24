@@ -654,7 +654,7 @@ a {
   gap: 10px;
   padding: 34px 26px 28px;
   background: none;
-  filter: drop-shadow(0 1px 1px rgba(70, 50, 25, 0.3)) drop-shadow(0 7px 9px rgba(70, 50, 25, 0.16));
+  filter: drop-shadow(-2px 3px 2px rgba(70, 50, 25, 0.28)) drop-shadow(-3px 9px 10px rgba(70, 50, 25, 0.18));
   transform: rotate(-0.4deg);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -663,25 +663,20 @@ a {
   transform: rotate(0.4deg);
 }
 
-/* Pedaço de papel com borda rasgada */
+/* Papel liso e fosco, como um post-it de verdade */
 .case-card::after {
   content: '';
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-color: #fcf8ea;
+  background-color: #fbf7dc;
   background-image:
-    var(--tex-grain),
-    var(--tex-fibers),
-    linear-gradient(98deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.35) 62%, rgba(120, 90, 40, 0.1) 64%, rgba(255, 255, 255, 0) 70%),
-    linear-gradient(172deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 40%, rgba(120, 90, 40, 0.14));
-  background-blend-mode: multiply, multiply, normal, normal;
-  clip-path: var(--torn-a);
+    linear-gradient(168deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 38%, rgba(150, 125, 50, 0.1) 100%);
+  border-radius: 1px 1px 3px 2px;
 }
 
 .case-card:nth-child(even)::after {
-  background-color: #faf5e4;
-  clip-path: var(--torn-b);
+  background-color: #faf6df;
 }
 
 .case-card-empty {
@@ -958,14 +953,11 @@ a {
 
 .step {
   position: relative;
-  background-color: #fcf8ea;
+  background-color: #fbf7dc;
   background-image:
-    var(--tex-grain),
-    var(--tex-fibers),
-    linear-gradient(172deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 40%, rgba(120, 90, 40, 0.14));
-  background-blend-mode: multiply, multiply, normal;
-  border: 1px solid rgba(70, 50, 25, 0.22);
-  box-shadow: var(--shadow-soft);
+    linear-gradient(168deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 38%, rgba(150, 125, 50, 0.1) 100%);
+  border: 0;
+  box-shadow: -2px 3px 3px rgba(70, 50, 25, 0.26), -3px 9px 12px rgba(70, 50, 25, 0.16);
   padding: 28px 26px 26px 76px;
   transform: rotate(var(--tilt, 0deg));
   transition: transform 0.25s ease, box-shadow 0.25s ease;

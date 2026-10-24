@@ -14,7 +14,7 @@
   --grid-color: rgba(98, 126, 150, 0.14);
 
   /* Papel, mesa e sombras quentes */
-  --paper: #fffdf7;
+  --paper: #fffefb;
   --paper-dark: #f6efde;
   --desk: #e0d6c2;
   --shadow-soft: 0 1px 1px rgba(70, 50, 25, 0.28), 0 5px 10px rgba(70, 50, 25, 0.14);
@@ -227,7 +227,7 @@ a {
 .grid-paper {
   background-color: var(--paper);
   background-image:
-    linear-gradient(rgba(255, 253, 247, 0.6), rgba(255, 253, 247, 0.6)),
+    linear-gradient(rgba(255, 254, 251, 0.82), rgba(255, 254, 251, 0.82)),
     var(--tex-fibers),
     var(--tex-grain),
     var(--tex-blotch),
@@ -508,21 +508,26 @@ a {
   border-radius: 1px 1px 6px 2px / 1px 1px 10px 2px;
 }
 
-/* Sombra da pontinha levantada */
+/* Fita crepe no topo, como no papel de referência */
 .sticky-note::after {
   content: '';
   position: absolute;
-  z-index: -2;
-  left: 8px;
-  right: 8px;
-  bottom: 6px;
-  height: 40%;
-  box-shadow: 0 12px 10px rgba(70, 50, 25, 0.42);
-  transform: rotate(1.4deg);
+  z-index: 2;
+  top: -11px;
+  left: 50%;
+  width: 78px;
+  height: 24px;
+  margin-left: -39px;
+  background-color: rgba(244, 231, 170, 0.86);
+  background-image:
+    linear-gradient(100deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.35) 38%, rgba(255, 255, 255, 0) 46%, rgba(120, 100, 40, 0.12) 62%, rgba(255, 255, 255, 0) 72%),
+    var(--tex-grain);
+  clip-path: var(--tape-ends);
+  transform: rotate(-3deg);
 }
 
 .sticky-note:nth-child(even)::after {
-  transform: rotate(-1.4deg);
+  transform: rotate(2.5deg);
 }
 
 .sticky-note:nth-child(3n) {
@@ -626,8 +631,9 @@ a {
   box-shadow: 3px 5px 5px rgba(70, 50, 25, 0.35), inset -1px -2px 3px rgba(0, 0, 0, 0.25);
 }
 
-.nda-note i {
-  margin-top: 6px;
+.nda-note .nda-lock {
+  flex: none;
+  margin-top: 4px;
   color: var(--accent-dark);
 }
 
@@ -734,7 +740,14 @@ a {
 }
 
 .also {
-  margin-top: 48px;
+  width: 100%;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1.5px dashed #bbb;
+}
+
+.also .chips {
+  justify-content: center;
 }
 
 .more-link {

@@ -1620,3 +1620,33 @@ a {
     display: none;
   }
 }
+
+/* ---------- Seletor de idioma ---------- */
+.lang-switch {
+  align-self: center;
+  flex: none;
+  margin-bottom: 6px;
+  padding: 2px 12px 3px;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--accent-dark);
+  text-decoration: none;
+  background-color: var(--paper);
+  background-image: var(--paper-fx);
+  box-shadow: var(--shadow-soft);
+  transform: rotate(2.5deg);
+  transition: transform 0.2s ease;
+}
+
+.lang-switch:hover,
+.lang-switch:focus-visible {
+  transform: rotate(0deg) translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .lang-switch {
+    margin-left: 6px;
+  }
+}
